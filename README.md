@@ -1,6 +1,6 @@
 # Mercadinho (RAD Python)
 
-![Meu Projeto](https://imgur.com/a/tjlhX6s)
+![Meu Projeto](https://i.imgur.com/N0gHNqB.png)
 
 > Projeto de faculdade, usando Flask, SQLite e Bootstrap5
 
