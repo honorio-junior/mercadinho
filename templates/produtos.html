@@ -2,8 +2,11 @@
 
 {% block content %}
 <div class="container mt-5">
+  <div class="row">
     <h2 class="mb-4">Produtos</h2>
-    <table class="table">
+  </div>
+  <div class="row">
+    <table class="table text-center table-striped align-middle">
         <thead>
           <tr>
             <th scope="col">Nome</th>
@@ -16,7 +19,7 @@
         <tbody>
             {% for produto in produtos%}
           <tr class="">
-            <td>{{produto.nome}}</td>
+            <td class="align-items-center">{{produto.nome}}</td>
             <td>{{produto.preco}}</td>
             <td>{{produto.quantidade}}</td>
             <td>{{produto.validade}}</td>
@@ -25,5 +28,6 @@
           {% endfor %}
         </tbody>
       </table>
+  </div>
 </div>
 {% endblock %}
