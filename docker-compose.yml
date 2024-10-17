@@ -1,0 +1,9 @@
+services:
+  app:
+    image: python:3.12
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    command: bash -c "pip install --no-cache-dir flask && python main.py"
