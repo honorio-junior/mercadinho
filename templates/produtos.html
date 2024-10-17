@@ -1,0 +1,29 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Produtos</h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Validade</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for produto in produtos%}
+          <tr class="">
+            <td>{{produto.nome}}</td>
+            <td>{{produto.preco}}</td>
+            <td>{{produto.quantidade}}</td>
+            <td>{{produto.validade}}</td>
+            <td><a type="button" href="/deletar/{{produto.id}}" class="btn btn-danger">Deletar</a type="button" href="/deletar/"></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</div>
+{% endblock %}

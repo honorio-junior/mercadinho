@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+<div class="container mt-5">
+   <h2 class="mb-4">Cadastrar Produto</h2>
+   <form method="post">
+       <div class="row mb-3">
+           <label for="nome" class="col-form-label col-sm-2">Nome:</label>
+           <div class="col-sm-10">
+               <input type="text" class="form-control" id="nome" placeholder="Nome do produto" name="nome" required>
+           </div>
+       </div>
+       
+       <div class="row mb-3">
+           <label for="quantidade" class="col-form-label col-sm-2">Quantidade:</label>
+           <div class="col-sm-10">
+               <input type="number" class="form-control" id="quantidade" placeholder="Quantidade" name='quantidade' required>
+           </div>
+       </div>
+       
+       <div class="row mb-3">
+           <label for="preco" class="col-form-label col-sm-2">Preço:</label>
+           <div class="col-sm-10">
+               <input type="text" class="form-control" id="preco" placeholder="Preço" name="preco" required>
+           </div>
+       </div>
+       
+       <div class="row mb-3">
+           <label for="validade" class="col-form-label col-sm-2">Validade:</label>
+           <div class="col-sm-10">
+               <input type="date" class="form-control" id="validade" name="validade" required>
+           </div>
+       </div>
+       
+       <div class="row mb-3">
+           <div class="col-sm-10 offset-sm-2">
+               <button type="submit" class="btn btn-primary">Cadastrar</button>
+           </div>
+       </div>
+   </form>
+</div>
+{% endblock %}
